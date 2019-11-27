@@ -1,0 +1,91 @@
+    :root {
+      --main-bg-opacity: 0.8;
+      --page-bg-color: rgb(15, 10, 21);
+      --header-bg-color: rgb(8,3,12);
+      --page-font-color: white;
+      --bosque-bg-color: rgb(18,5,33);
+      --rutas-bg-color: rgb(3, 104, 56);
+      --experiencias-bg-color: rgb(43,132,206);
+      --gastronomia-bg-color: rgb(243,147,61);
+      --hospedaje-bg-color: rgb(75,86,150);
+
+      --darkGreen-bg-color: #080808;
+      --orange-bg-color: #D99500;
+      --darkGreen-bg-color_2: #022F00;
+    }
+
+    @font-face {
+      font-family: 'HelveticaText';
+      src: url('../css/fonts/Helvetica_LT_Std_Condensed.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'HelveticaTitles';
+      src: url('../css/fonts/Helvetica_LT_Std_Bold_Condensed.woff') format('woff');
+    }
+
+    body{ 
+      font-family: 'HelveticaText'; 
+      background-color: var(--page-bg-color);
+      color: var(--page-font-color);
+    }
+
+    .center{
+      text-align: center;
+    }
+
+    .reservaButton{
+      background-color: #FFA100;
+      color: #ffffff;
+      border: 1px solid #FFA100;
+      border-radius: 3px;
+      padding: 3px 40px 3px 40px;
+    }
+
+    .headerIcon:hover{
+      color: #ffffff;
+    }
+
+    .headerIcon{
+      width: 20px; 
+      height: 20px;
+      margin-right: 10px;
+    }
+
+
+    /* Video */
+    #myVideo {
+      height: 100%;
+      width: 100%;
+    }
+
+    .nav{
+      background-color: var(--darkGreen-bg-color);
+      padding: 0px;
+      color: #ffffff;
+    }
+
+    .noDecoration{
+      text-decoration: none;
+    }
+
+    .linkHeader:hover{
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .linkHeader{
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .headerOption{
+      color: #ffffff;
+      background-color: var(--darkGreen-bg-color_2);
+      border-color: var(--darkGreen-bg-color_2);
+    }
+
+    .headerOption:hover{
+      font-size: 20px;
+      cursor: pointer;
+    }
