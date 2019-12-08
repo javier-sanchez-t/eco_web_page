@@ -34,6 +34,10 @@
       text-align: center;
     }
 
+    .right{
+      text-align: right;
+    }
+
     .reservaButton{
       background-color: #FFA100;
       color: #ffffff;
@@ -100,6 +104,14 @@
       padding-bottom: 5px;
     }
 
+    .subtitle{
+      font-size: 22px;
+    }
+
+    .leerMas{
+      text-decoration: none;
+      color: var(--orange-bg-color);
+    }
 
     @media only screen and (max-width: 750px) {
       .desktop{
@@ -108,5 +120,13 @@
 
       .mobile{
         display: block !important;
+      }
+
+      .rumbosLogo{
+        height: 70px;
+      }
+
+      .rumbos{
+        height: 70px;
       }
     }
