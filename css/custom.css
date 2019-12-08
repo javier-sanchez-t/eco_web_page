@@ -9,7 +9,7 @@
       --gastronomia-bg-color: rgb(243,147,61);
       --hospedaje-bg-color: rgb(75,86,150);
 
-      --darkGreen-bg-color: #080808;
+      --darkGreen-bg-color: #08070B;
       --orange-bg-color: #D99500;
       --darkGreen-bg-color_2: #022F00;
     }
@@ -39,7 +39,7 @@
       color: #ffffff;
       border: 1px solid #FFA100;
       border-radius: 3px;
-      padding: 3px 40px 3px 40px;
+      padding: 3px 20px 3px 20px;
     }
 
     .headerIcon:hover{
@@ -65,6 +65,10 @@
       color: #ffffff;
     }
 
+    .navbar-dark{
+      background-color: var(--darkGreen-bg-color);
+    }
+
     .noDecoration{
       text-decoration: none;
     }
@@ -83,9 +87,26 @@
       color: #ffffff;
       background-color: var(--darkGreen-bg-color_2);
       border-color: var(--darkGreen-bg-color_2);
+      width: 100%;
     }
 
     .headerOption:hover{
       font-size: 20px;
       cursor: pointer;
+    }
+
+    /* padddings */
+    .padB5{
+      padding-bottom: 5px;
+    }
+
+
+    @media only screen and (max-width: 750px) {
+      .desktop{
+        display: none;
+      }
+
+      .mobile{
+        display: block !important;
+      }
     }
