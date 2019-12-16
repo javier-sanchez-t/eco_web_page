@@ -24,10 +24,29 @@
       src: url('../css/fonts/Helvetica_LT_Std_Bold_Condensed.woff') format('woff');
     }
 
+    @font-face {
+      font-family: 'Smoke';
+      src: url('../css/fonts/smokeattack-webfont.woff') format('woff');
+    }
+
     body{ 
       font-family: 'HelveticaText'; 
       background-color: var(--page-bg-color);
       color: var(--page-font-color);
+    }
+
+    .titleSection{
+      font-family: 'Smoke'; 
+      font-size: 80px;
+    }
+
+    .titleSection2{
+      font-family: 'Smoke'; 
+      font-size: 70px;
+    }
+
+    .rumbosLogo{
+      margin-right: 30px;
     }
 
     .center{
@@ -135,9 +154,16 @@
 
       .rumbosLogo{
         height: 70px;
+        margin-right: 10px;
       }
 
-      .rumbos{
-        height: 70px;
+      .titleSection{
+        font-size: 50px !important;
+        text-align: center !important;
+      }
+
+      .titleSection2{
+        font-size: 35px !important;
+        text-align: left !important;
       }
     }
