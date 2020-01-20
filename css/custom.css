@@ -182,6 +182,9 @@
       width: 35px;
     }
 
+    .footer{
+      
+    }
 
     @media only screen and (max-width: 750px) {
       .desktop{
