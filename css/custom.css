@@ -35,6 +35,83 @@
       color: var(--page-font-color);
     }
 
+    .rumbosTitle{
+      font-family: 'Smoke'; 
+      font-size: 100px;
+      height: 300px;
+      background-size: cover;
+      background-image: url('../img/rumbos/SANTUARIO DE LAS LUCIERNAGAS/Luciernagas.jpg');
+      background-position: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .aventuraTitle{
+      font-family: 'Smoke'; 
+      font-size: 100px;
+      height: 300px;
+      background-size: cover;
+      background-image: url('../img/aventura/GOTCHA/GOTCHA 1.jpg');
+      background-position: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .restauranteTitle{
+      font-family: 'Smoke'; 
+      font-size: 100px;
+      height: 300px;
+      background-size: cover;
+      background-image: url('../img/restaurantes/RESTAURANTE_ARGOS/birria.jpg');
+      background-position: 0 80%;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .hospedajeSTitle{
+      font-family: 'Smoke'; 
+      font-size: 100px;
+      height: 300px;
+      background-size: cover;
+      background-image: url('../img/hospedajeSantuario/Glamping/Glamping\ 4.jpg');
+      background-position: 0 60%;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .hospedajeNTitle{
+      font-family: 'Smoke'; 
+      font-size: 100px;
+      height: 300px;
+      background-size: cover;
+      background-image: url('../img/hospedajeNanacamilpa/Hotel_Argos/HOTEL\ ARGOS\ 2.jpg');
+      background-position: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .tiendasTitle{
+      font-family: 'Smoke'; 
+      font-size: 100px;
+      height: 300px;
+      background-size: cover;
+      background-image: url('../img/tiendas/TIENDA_MAGICA/converse\ luciernagas.jpg');
+      background-position: 0 95%;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .atencionTitle{
+      font-family: 'Smoke'; 
+      font-size: 100px;
+      height: 300px;
+      background-size: cover;
+      background-image: url('../img/atencionCliente/guia.jpg');
+      background-position: bottom;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
     .titleSection{
       font-family: 'Smoke'; 
       font-size: 80px;
@@ -198,6 +275,55 @@
       .rumbosLogo{
         height: 70px;
         margin-right: 10px;
+      }
+
+      .rumbosTitle{
+        font-size: 50px !important;
+        height: 170px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .aventuraTitle{
+        font-size: 50px !important;
+        height: 170px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .restauranteTitle{
+        font-size: 50px !important;
+        height: 170px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .hospedajeSTitle{
+        font-size: 50px !important;
+        height: 170px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .hospedajeNTitle{
+        font-size: 42px !important;
+        height: 170px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .tiendasTitle{
+        font-size: 42px !important;
+        height: 170px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .atencionTitle{
+        font-size: 50px !important;
+        height: 170px;
+        padding-left: 30px;
+        padding-right: 30px;
       }
 
       .titleSection{

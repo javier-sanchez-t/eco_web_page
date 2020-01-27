@@ -16,5 +16,5 @@ $('section.awSlider .carousel').on('slid.bs.carousel', function () {
 
 //LAUNCH PUBLICITY MODAL
 $(window).on('load',function(){
-	$('#publicityModal').modal('show');
+	//$('#publicityModal').modal('show');
 });
