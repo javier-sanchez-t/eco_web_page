@@ -212,19 +212,19 @@
  <div class="container">
   <div class="row center">
    <div class="col-sm col-12 padB5">
-    <button type="button" class="btn btn-success headerOption">MISIÓN</button>
+    <button type="button" class="btn btn-success headerOption" onclick="launchModal('MISION')">MISIÓN</button>
    </div>
 
    <div class="col-sm col-12 padB5">
-    <button type="button" class="btn btn-success headerOption">VISIÓN</button>
+    <button type="button" class="btn btn-success headerOption" onclick="launchModal('VISION')">VISIÓN</button>
    </div>
 
    <div class="col-sm col-12 padB5">
-    <button type="button" class="btn btn-success headerOption">REGLAMENTO</button>
+    <button type="button" class="btn btn-success headerOption" onclick="launchModal('REGLAMENTO')">REGLAMENTO</button>
    </div>
 
    <div class="col-sm col-12 padB5">
-    <button type="button" class="btn btn-success headerOption">RECOMENDACIONES</button>
+    <button type="button" class="btn btn-success headerOption" onclick="launchModal('RECOMENDACIONES')">RECOMENDACIONES</button>
    </div>
 
    <div class="col-sm col-12 padB5">
@@ -233,12 +233,27 @@
    </div>
 
    <div class="col-sm col-12 padB5">
-    <button type="button" class="btn btn-success headerOption">SEGURIDAD</button>
+    <button type="button" class="btn btn-success headerOption" onclick="launchModal('SEGURIDAD')">SEGURIDAD</button>
    </div>
   </div>
  </div>
  <!--END OF OPTIONS -->
 
+  <!-- GENERAL MODAL-->
+  <div class="modal fade" id="generalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+   <div class="modal-content" style="background-color: rgba(0,0,0,.0001) !important;">
+    <div class="modal-body" style="padding: 0px;">
+     <img id="imgGeneralModal" src="" style="width: 100%; border-radius: 10px;">
+    </div>
+    <div class="modal-footer" style="background-color: rgba(0,0,0,.0001) !important; border-top: none;">
+     <button style="width: 150px;" type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- END OF GENERAL MODAL -->
 
  <!-- MODAL - QUESTIONS -->
  <div class="modal fade" id="questionsModal" tabindex="-1" role="dialog" aria-labelledby="questionsModalLongTitle"

@@ -19,6 +19,12 @@ $(window).on('load', function () {
 	$('#publicityModal').modal('show');
 });
 
+//LAUNCH MODALS
+function launchModal(imageName) {
+	$("#imgGeneralModal").attr("src", "img/modal/" + imageName + ".png");
+	$('#generalModal').modal('show');
+}
+
 // ===== Scroll to Section ==== 
 $('#INICIO_LINK').click(function () {
 	$("html, body").delay(0).animate({
