@@ -25,6 +25,10 @@ function launchModal(imageName) {
 	$('#generalModal').modal('show');
 }
 
+$('#imgGeneralModal').on('hidden.bs.modal', function () {
+	$("#imgGeneralModal").attr("src", "");
+});
+
 // ===== Scroll to Section ==== 
 $('#INICIO_LINK').click(function () {
 	$("html, body").delay(0).animate({
