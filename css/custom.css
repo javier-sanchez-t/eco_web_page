@@ -259,8 +259,12 @@
       width: 35px;
     }
 
-    .footer{
-      
+    .btn .btn-link .collapsed{
+      text-align: left !important;
+    }
+
+    .card-body{
+      color: #000000;
     }
 
     @media only screen and (max-width: 750px) {

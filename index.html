@@ -11,11 +11,6 @@
  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
  <link rel="stylesheet" type="text/css" href="./css/custom.css" />
 
- <!-- JS -->
- <script src="./js/jquery-3.3.1.slim.min.js"></script>
- <script src="./js/popper.min.js"></script>
- <script src="./js/bootstrap.min.js"></script>
- <script src="./js/util.js"></script>
 </head>
 
 <body>
@@ -51,24 +46,28 @@
 
    <tr>
     <td height="30" style="padding-bottom: 20px;">
-     <a href="#" class="noDecoration linkHeader">
+     <a href="javascript:void(0)" class="noDecoration linkHeader" id="ATENCION_VIAJERO_LINK">
       Atención al viajero
      </a>
      /
-     <a href="#" class="noDecoration linkHeader">
+     <a href="javascript:void(0)" class="noDecoration linkHeader" id="TIENDAS_LINK">
+      Tiendas
+     </a>
+     /
+     <a href="javascript:void(0)" class="noDecoration linkHeader" id="HOSPEDAJE_LINK">
       Hospedaje
      </a>
      /
-     <a href="#" class="noDecoration linkHeader">
-      Experiencias
-     </a>
-     /
-     <a href="#" class="noDecoration linkHeader">
+     <a href="javascript:void(0)" class="noDecoration linkHeader" id="RESTAURANTE_LINK">
       Restaurante
      </a>
      /
-     <a href="#" class="noDecoration linkHeader">
-      Tours
+     <a href="javascript:void(0)" class="noDecoration linkHeader" id="AVENTURA_LINK">
+      Aventura
+     </a>
+     /
+     <a href="javascript:void(0)" class="noDecoration linkHeader" id="RUMBOS_LINK">
+      Rumbos
      </a>
     </td>
    </tr>
@@ -117,15 +116,7 @@
    <ul class="navbar-nav mr-auto">
 
     <li class="nav-item active d-lg-none left">
-     <a class="nav-link col" href="#BOSQUE_MAGICO">
-      <!--img class="headerOpcionMenuImgSM" src="img/icons_menu/BOSQUE MAGICO BLANCO.png"-->
-      INICIO
-     </a>
-    </li>
-
-
-    <li class="nav-item active d-lg-none left">
-     <a class="nav-link col" href="#RUTAS">
+     <a class="nav-link col" href="javascript:void(0)" id="ATENCION_VIAJERO_LINK_2">
       <!--img class="headerOpcionMenuImgSM" src="img/icons/Rutas.svg"-->
       ATENCIÓN AL VIAJERO
      </a>
@@ -133,28 +124,23 @@
 
 
     <li class="nav-item active d-lg-none left">
-     <a class="nav-link col" href="#EXPERIENCIAS">
+     <a class="nav-link col" href="javascript:void(0)" id="TIENDAS_LINK_2">
       <!--img class="headerOpcionMenuImgSM" src="img/icons/experencias.svg"-->
+      TIENDAS
+     </a>
+    </li>
+
+
+    <li class="nav-item active d-lg-none left">
+     <a class="nav-link col" href="javascript:void(0)" id="HOSPEDAJE_LINK_2">
+      <!--img class="headerOpcionMenuImgSM" src="img/icons/Restaurante.svg"-->
       HOSPEDAJE
      </a>
     </li>
 
 
-    <li class="nav-item active" style="width: 300px;">
-
-    </li>
-
-
     <li class="nav-item active d-lg-none left">
-     <a class="nav-link col" href="#GASTRONOMIA">
-      <!--img class="headerOpcionMenuImgSM" src="img/icons/Restaurante.svg"-->
-      EXPERIENCIAS
-     </a>
-    </li>
-
-
-    <li class="nav-item active d-lg-none left">
-     <a class="nav-link col" href="#HOSPEDAJE">
+     <a class="nav-link col" href="javascript:void(0)" id="RESTAURANTE_LINK_2">
       <!--img class="headerOpcionMenuImgSM" src="img/icons/Hospedaje.svg"-->
       RESTAURANTE
      </a>
@@ -162,13 +148,19 @@
 
 
     <li class="nav-item active d-lg-none left">
-     <a class="nav-link col" href="#ATENCION_TURISTICA">
+     <a class="nav-link col" href="javascript:void(0)" id="AVENTURA_LINK_2">
       <!--img class="headerOpcionMenuImgSM" src="img/icons/Atencion a Cliente.svg"-->
-      TOURS
+      AVENTURA
      </a>
     </li>
 
 
+    <li class="nav-item active d-lg-none left">
+     <a class="nav-link col" href="javascript:void(0)" id="RUMBOS_LINK_2">
+      <!--img class="headerOpcionMenuImgSM" src="img/icons/Atencion a Cliente.svg"-->
+      RUMBOS
+     </a>
+    </li>
    </ul>
   </div>
 
@@ -236,7 +228,8 @@
    </div>
 
    <div class="col-sm col-12 padB5">
-    <button type="button" class="btn btn-success headerOption">PREGUNTAS FRECUENTES</button>
+    <button type="button" class="btn btn-success headerOption" data-toggle="modal"
+     data-target="#questionsModal">PREGUNTAS FRECUENTES</button>
    </div>
 
    <div class="col-sm col-12 padB5">
@@ -247,12 +240,325 @@
  <!--END OF OPTIONS -->
 
 
+ <!-- MODAL - QUESTIONS -->
+ <div class="modal fade" id="questionsModal" tabindex="-1" role="dialog" aria-labelledby="questionsModalLongTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+   <div class="modal-content">
+    <div class="modal-header">
+     <h5 class="modal-title" id="questionsModalLongTitle" style="color: #000000;">Preguntas frecuentes</h5>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body">
+     <div class="row">
+      <div class="col-12 col-sm-12">
+       <div id="accordion">
+
+        <div class="card">
+         <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+            aria-controls="collapseOne">
+            1. ¿Qué es el Santuario de las Luciérnagas?
+           </button>
+          </h5>
+         </div>
+         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+           El Santuario de las Luciérnagas es una reserva natural ubicada en el municipio de Nanacamilpa en el
+           estado de Tlaxcala. El avistamiento de las luciérnagas sucede en verano entre los meses de
+           junio, julio y las primeras semanas de agosto.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            2. ¿Dónde se ubican las oficinas?
+           </button>
+          </h5>
+         </div>
+         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+           Están ubicadas en Av. Juárez #76 Nanacamilpa Tlaxcala. Para ingresar al Santuario de las Luciernagas
+           es necesario pasar primero a las oficinas a recoger, pagar o canjear su reservación por sus
+           pasaportes de entrada físicos y/o comprar cualquiera de nuestros servicios.
+           <b>
+            NO podrá ingresar o pagar directamente en el Santuario.
+           </b>
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading3">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+            aria-controls="collapse3">
+            3. ¿Cómo compro las entradas?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+          <div class="card-body">
+           Puedes adquirir las entradas llamando al <b> Cel. 7481069122</b> o <b> Cel. 7481058319</b>, visita nuestra
+           oficina
+           central en <b> Av. Juárez #76</b> o bien se pueden comprar ingresando al botón <b>“RESERVACIÓN”</b>
+           ubicado en la parte superior derecha de nuestra página web www.ecoreinoaventura.com
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading4">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+            aria-controls="collapse4">
+            4. ¿Cómo adquirir la entrada Vip?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+          <div class="card-body">
+           Las entradas Vip se adquieren automáticamente en cualquiera de nuestros paquetes de hospedaje
+           de <b> Eco Reino Aventura </b>, ya sea en cualquiera de las dos secciones “Hospedaje Santuario” o
+           “Hospedaje Nanacamilpa” <b>No se pueden adquirir sin hospedaje</b>.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading5">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+            aria-controls="collapse5">
+            5. ¿Qué es y que contiene las entradas Vip?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+          <div class="card-body">
+           <b>El pase Vip incluye...</b> <br>
+           Guía clasificación Oro, Recorrido de Naturaleza, Renta de impermeable, Jarro de barro.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading6">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
+            aria-controls="collapse6">
+            6. ¿Los bebés pagan entrada al parque?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+          <div class="card-body">
+           Los niños y niñas <b>menores</b> de 90 centímetros no pagan entrada, <b>mayores</b> de 90 centímetros pagan
+           entrada completa.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading7">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false"
+            aria-controls="collapse7">
+            7. ¿Hay hospedaje?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+          <div class="card-body">
+           <b>Si</b>, contamos con varias opciones de hospedaje ya sea en la ciudad de Nanacamilpa en <b>Hotel</b>, o en
+           el Santuario de Luciérnagas en <b>Cabaña, Glamping o Campamento</b>.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading8">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false"
+            aria-controls="collapse8">
+            8. ¿Qué es el Ecoturismo?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+          <div class="card-body">
+           El <b>turismo ecológico</b>, ecoturismo o turismo de <b>naturaleza</b> es un estilo del turismo alternativo o
+           ecológico diferente al turismo tradicional. Es un enfoque para las actividades turísticas en el
+           cual se privilegia la <b>sostenibilidad</b>, la <b>preservación</b>, la apreciación del medio (<b>tanto
+            natural como cultural</b>) que acoge y sensibiliza a los viajantes.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading9">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false"
+            aria-controls="collapse9">
+            9. ¿A qué hora puedo entrar a mi hotel o cabaña?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+          <div class="card-body">
+           La hora de entrada a su hospedaje ya sea en <b>Nanacamilpa</b> o <b>Santuario</b> es después de las <b>3:00
+            PM</b>.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading10">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false"
+            aria-controls="collapse10">
+            10. ¿A qué hora puedo desalojar mi hotel o cabaña?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
+          <div class="card-body">
+           La hora de desalojo límite ya sea en hospedaje de <b>Nanacamilpa o Santuario</b> es hasta las <b>11:00 AM</b>
+           del día siguiente, (si son dos o más noches sus pertenencias se pueden quedar en la
+           habitación).
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading11">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false"
+            aria-controls="collapse11">
+            11. ¿En caso de lluvia hay Luciérnagas?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+          <div class="card-body">
+           <b>Si</b>, en caso de <b>lluvia moderada</b> las Luciérnagas pueden seguir apreciando, incluso hay
+           posibilidad de
+           que salgan más Luciérnagas de lo normal, y en <b>lluvia fuerte</b> la posibilidad que salgan se
+           puede reducir y en caso de <b>tormenta eléctrica</b> se suspende el recorrido sin excusa
+           posponiendo su visita para otro día sin costo extra.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading12">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false"
+            aria-controls="collapse12">
+            12. ¿En caso de lluvia se cierra Eco Reino Aventura?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
+          <div class="card-body">
+           <b>No, Eco Reino Aventura</b> no cierra sus servicios básicos en el bosque por lluvia <b>moderada o lluvia
+            fuerte</b>, a excepción de “cinema de camping” y “fogata”.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading13">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false"
+            aria-controls="collapse13">
+            13. ¿Qué tipo de Alimentos puedo ingresar al parque?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
+          <div class="card-body">
+           <b>No se permite la introducción de Alimentos o bebidas de ningún tipo</b>.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading14">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="false"
+            aria-controls="collapse14">
+            14. ¿Con cuánto tiempo es recomendable reservar?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
+          <div class="card-body">
+           Para fines de semana, mínimo con un mes de anticipación.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading15">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse15" aria-expanded="false"
+            aria-controls="collapse15">
+            15. ¿A qué número me puedo comunicar si voy en familia?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordion">
+          <div class="card-body">
+           Para tu visita <b>familiar</b> puedes comunicarte con nosotros a través de <b>WhatsApp o llamada</b> a los
+           números <b>7481069122</b> o <b>7481058319</b>.
+          </div>
+         </div>
+        </div>
+
+        <div class="card">
+         <div class="card-header" id="heading16">
+          <h5 class="mb-0">
+           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse16" aria-expanded="false"
+            aria-controls="collapse16">
+            16. ¿A qué número me puedo comunicar si voy en grupo?
+           </button>
+          </h5>
+         </div>
+         <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordion">
+          <div class="card-body">
+           Para tu visita <b>grupal o empresarial</b> puedes comunicarte con nosotros a través de <b>WhatsApp o
+            llamada</b> al número <b>2224656805</b>.
+          </div>
+         </div>
+        </div>
+
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- END OF MODAL - QUESTIONS -->
+
+
  <!--SPACE-->
  <div class="container" style="height: 50px;"></div>
  <!--END OF SPACE-->
 
  <!-- RUMBOS -->
- <div class="container">
+ <div class="container" id="RUMBOS">
   <div class="row">
 
    <div class="col-sm-12 col-12 center rumbosTitle">
@@ -516,7 +822,7 @@
  <!--END OF SPACE-->
 
  <!-- AVENTURA -->
- <div class="container">
+ <div class="container" id="AVENTURA">
   <div class="row">
 
    <div class="col-sm-12 col-12 center aventuraTitle">
@@ -1142,7 +1448,7 @@
  <!--END OF SPACE-->
 
  <!-- RESTAURANTES -->
- <div class="container">
+ <div class="container" id="RESTAURANTE">
   <div class="row">
 
    <div class="col-sm-12 col-12 center restauranteTitle">
@@ -1269,7 +1575,7 @@
  <!--END OF SPACE-->
 
  <!-- HOSPEDAJE SANTUARIO -->
- <div class="container">
+ <div class="container" id="HOSPEDAJE">
   <div class="row">
 
    <div class="col-sm-12 col-12 center hospedajeSTitle">
@@ -1680,7 +1986,7 @@
  <!--END OF SPACE-->
 
  <!-- TIENDAS -->
- <div class="container">
+ <div class="container" id="TIENDAS">
   <div class="row">
 
    <div class="col-sm-12 col-12 center tiendasTitle">
@@ -1806,20 +2112,20 @@
  <!--END OF SPACE-->
 
  <!-- ATENCION AL CLIENTE -->
- <div class="container">
-   <div class="row">
- 
-    <div class="col-sm-12 col-12 center atencionTitle">
-     <div style="text-align: left;">
-      <img src="img/atencionCliente/atencion a viajero.png" alt="" height="120" class="rumbosLogo">
-     </div>
-     <div style="text-align: right;">
-       Atención al Viajero
-     </div>
+ <div class="container" id="ATENCION_VIAJERO">
+  <div class="row">
+
+   <div class="col-sm-12 col-12 center atencionTitle">
+    <div style="text-align: left;">
+     <img src="img/atencionCliente/atencion a viajero.png" alt="" height="120" class="rumbosLogo">
     </div>
- 
+    <div style="text-align: right;">
+     Atención al Viajero
+    </div>
    </div>
+
   </div>
+ </div>
 
  <!--SPACE-->
  <div class="container" style="height: 20px;"></div>
@@ -1922,5 +2228,11 @@
 
 
 </body>
+
+<!-- JS -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/util.js"></script>
 
 </html>
