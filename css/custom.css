@@ -345,5 +345,9 @@
         height: 28px;
         margin-right: 1px;
       }
+
+      .noBG{
+        background-image: none !important;
+      }
     }
 
