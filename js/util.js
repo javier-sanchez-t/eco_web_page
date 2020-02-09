@@ -21,7 +21,7 @@ $(window).on('load', function () {
 
 //LAUNCH MODALS
 function launchModal(imageName) {
-	$("#imgGeneralModal").attr("src", "img/modal/" + imageName + ".png");
+	$("#imgGeneralModal").attr("src", "img/modal/" + imageName + ".jpg");
 	$('#generalModal').modal('show');
 }
 
