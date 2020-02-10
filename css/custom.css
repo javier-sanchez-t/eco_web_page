@@ -166,7 +166,7 @@
     }
 
     .nav{
-      background-color: var(--darkGreen-bg-color);
+      /*background-color: var(--darkGreen-bg-color);*/
       padding: 0px;
       color: #ffffff;
     }
@@ -180,7 +180,7 @@
     }
 
     .linkHeader:hover{
-      color: #ffffff;
+      color: #ffa100;
       text-decoration: none;
     }
 
