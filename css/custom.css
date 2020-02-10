@@ -349,5 +349,9 @@
       .noBG{
         background-image: none !important;
       }
+
+      .padTMob30{
+        padding-top: 30px !important;
+      }
     }
 

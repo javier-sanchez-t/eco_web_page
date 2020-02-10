@@ -139,7 +139,7 @@ var bodyInfo = [
 		description: "Imagínate comer o venderle a tus vecinos mermelada 100% natural elaborada artesanalmente por ti mismo. ¡RIQUISIMO! Nosotros en taller de mermeladas te enseñaremos todo el procedimiento para elaborar tal mermelada."
 	},
 	{
-		title: "EXPO FOTOGRAFÍA",
+		title: "MUSEO FOTOGRÁFICO",
 		description: "Regresa al pasado y asómbrate con el surgimiento de Nanacamilpa y sus personajes históricos que marcaron el pasado para un gran presente."
 	},
 	{
@@ -187,7 +187,7 @@ var bodyInfo = [
 		description: "Si lo tuyo es la comodidad debes hospedarte en Hotel Campestre, disfrutaras de bellos paisajes urbanos a la vez que te encontrarás ubicado a tan solo 5 minutos en auto del zócalo de la ciudad de Nanacamilpa Tlaxcala y a 20 minutos (6 kilómetros) del Santuario de las Luciérnagas Eco Reino Aventura donde vivirás mágicas experiencias."
 	},
 	{
-		title: "HOTEL LOS ANGELES",
+		title: "MAS HOTELES",
 		description: "Es una práctica opción para hospedarte en un lugar inolvidable y disfrutar de grandes experiencias con tu familia o amigos con Eco Reino Aventura, Santuario de las Luciernagas ubicado a tan solo 3 minutos a pie del Zócalo de la ciudad de Nanacamilpa Tlaxcala y a 15 minutos del Santuario de las Luciérnagas."
 	},
 	{
