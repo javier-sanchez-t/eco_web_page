@@ -281,7 +281,7 @@ function sendFacturasForm() {
  Email.send({
   Host: "smtp.gmail.com",
   Username: "jefe10jav@gmail.com",
-  Password: "javi10%st",
+  Password: "soymaster89",
   To: 'jefe10jav@gmail.com',
   From: "jefe10jav@gmail.com",
   Subject: "Solicitud de facturación",
@@ -295,6 +295,8 @@ function sendFacturasForm() {
    } else {
     alert("Ocurrió un error con su solicitud, inténtelo más tarde.");
    }
+
+   console.log("ERROR:"+message);
   }
  );
 }
