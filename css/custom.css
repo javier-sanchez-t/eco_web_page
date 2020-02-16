@@ -267,6 +267,24 @@
       color: #000000;
     }
 
+    #facturaModalTittle{
+      text-align: center;
+      width: 100%;
+    }
+    
+    #factModalLogo{
+      width: 200px;
+      margin-bottom: 3%;
+      margin-top: 3%;
+    }
+
+    .modal-content {
+      background-image: url("../img/modal/FACTURACION.jpg");
+      background-repeat: no-repeat;
+      width: 100%;
+      background-size: cover;
+    }
+
     @media only screen and (max-width: 750px) {
       .desktop{
         display: none !important;
