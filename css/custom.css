@@ -285,6 +285,17 @@
       background-size: cover;
     }
 
+    .footerText{
+      color: #81af32 !important;
+      font-size: 22px;
+      text-decoration: none;
+    }
+
+    .footerText:hover{
+      color: #81af32 !important;
+      text-decoration: none;
+    }
+
     @media only screen and (max-width: 750px) {
       .desktop{
         display: none !important;
