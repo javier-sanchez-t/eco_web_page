@@ -278,7 +278,7 @@
       margin-top: 3%;
     }
 
-    .modal-content {
+    .modal-content.facturaModal {
       background-image: url("../img/modal/FACTURACION.jpg");
       background-repeat: no-repeat;
       width: 100%;
