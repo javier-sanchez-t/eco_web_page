@@ -296,7 +296,29 @@
       text-decoration: none;
     }
 
+    .greenBackDesk{
+      background-color: #47712a;
+      border-radius: 8px;
+      opacity: 0.9;
+    }
+
     @media only screen and (max-width: 750px) {
+      .padtMob10{
+        padding: 10px !important;
+      }
+
+      .greenBackDesk{
+        background: none !important;
+        border-radius: none !important;
+        opacity: 1 !important;
+      }
+
+      .greenBackMob{
+        background-color: #47712a;
+        border-radius: 8px;
+        opacity: 0.9;
+      }
+
       .desktop{
         display: none !important;
       }
