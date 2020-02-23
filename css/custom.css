@@ -302,6 +302,36 @@
       opacity: 0.9;
     }
 
+    .blueBackDesk{
+      background-color: #0067bb;
+      border-radius: 8px;
+      opacity: 0.9;
+    }
+
+    .orangeBackDesk{
+      background-color: #d9bd22;
+      border-radius: 8px;
+      opacity: 0.9;
+    }
+
+    .bluedarkBackDesk{
+      background-color: #1F4E79;
+      border-radius: 8px;
+      opacity: 0.9;
+    }
+
+    .purpleBackDesk{
+      background-color: #7030A0;
+      border-radius: 8px;
+      opacity: 0.9;
+    }
+
+    .yellowBackDesk{
+      background-color: #cbc13c;
+      border-radius: 8px;
+      opacity: 0.9;
+    }
+
     @media only screen and (max-width: 750px) {
       .padtMob10{
         padding: 10px !important;
@@ -315,6 +345,66 @@
 
       .greenBackMob{
         background-color: #47712a;
+        border-radius: 8px;
+        opacity: 0.9;
+      }
+
+      .blueBackDesk{
+        background: none !important;
+        border-radius: none !important;
+        opacity: 1 !important;
+      }
+
+      .blueBackMob{
+        background-color: #0067bb;
+        border-radius: 8px;
+        opacity: 0.9;
+      }
+
+      .orangeBackDesk{
+        background: none !important;
+        border-radius: none !important;
+        opacity: 1 !important;
+      }
+
+      .orangeBackMob{
+        background-color: #d9bd22;
+        border-radius: 8px;
+        opacity: 0.9;
+      }
+
+      .bluedarkBackDesk{
+        background: none !important;
+        border-radius: none !important;
+        opacity: 1 !important;
+      }
+
+      .bluedarkBackMob{
+        background-color: #1F4E79;
+        border-radius: 8px;
+        opacity: 0.9;
+      }
+
+      .purpleBackDesk{
+        background: none !important;
+        border-radius: none !important;
+        opacity: 1 !important;
+      }
+
+      .purpleBackMob{
+        background-color: #7030A0;
+        border-radius: 8px;
+        opacity: 0.9;
+      }
+
+      .yellowBackDesk{
+        background: none !important;
+        border-radius: none !important;
+        opacity: 1 !important;
+      }
+
+      .yellowBackMob{
+        background-color: #cbc13c;
         border-radius: 8px;
         opacity: 0.9;
       }
