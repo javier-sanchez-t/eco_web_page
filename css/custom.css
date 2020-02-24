@@ -211,8 +211,12 @@
     }
 
     .leerMas{
-      text-decoration: none;
-      color: var(--orange-bg-color);
+      text-decoration: underline;
+      color: #ffffff;
+    }
+
+    .leerMas:hover{
+      color: #ffffff;
     }
 
     .containerTextVideo{
@@ -361,7 +365,33 @@
       background: radial-gradient(circle, rgba(8,7,11,1) 0%, rgba(121,121,121,0) 74%);   
     }
 
+    .footerLogo{
+      height: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      animation-duration: 30s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    .footerLogosContainer{
+      margin-top: 280px;
+      padding: 20px 0px 20px 0px;
+      background: rgb(113,156,192);
+      background: radial-gradient(circle, rgba(113,156,192,1) 0%, rgba(121,121,121,0) 70%); 
+    }
+
     @media only screen and (max-width: 750px) {
+      .footerLogosContainer{
+        margin-top: 30px !important;
+      }
+
+      .footerLogo{
+        height: 40px !important;
+      }
+
       .santurioTitle{
         top: 0px;
         font-size: 40px;

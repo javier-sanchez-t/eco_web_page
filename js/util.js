@@ -107,7 +107,7 @@ $('#RUMBOS_LINK_2').click(function () {
 
 var bodyInfo = [
  {
-  title: "LUCIÉRNAGAS",
+  title: "PASAPORTE MÁGICO",
   description: "Las luciérnagas se caracterizan por su capacidad de bioluminiscencia, alrededor de las 8pm comienza este espectáculo que la naturaleza nos regala, el cual dura 50 minutos aproximadamente, durante el recorrido por el bosque podrás vivir esta mágica experiencia."
  },
  {
@@ -115,12 +115,12 @@ var bodyInfo = [
   description: "Alguna vez te has preguntado, ¿cuál es el proceso de elaboración del delicioso pulque? Podrás descubrirlo en el recorrido de la Ruta Pulquera, el cual se realiza en uno de los ranchos magueyeros más importantes del mundo, donde conocerás el procedimiento de producción de la bebida de los dioses, así como la elaboración de productos derivados de la planta del maguey."
  },
  {
-  title: "HACIENDA SIGLO XVlll",
-  description: "Ubicada a 30 minutos del Santuario de la Luciérnaga, considerada como uno de los principales atractivos turísticos del estado de Hidalgo y dentro del Top 10 de las mejores haciendas del país, donde podrás transportarte en el tiempo y vivir un poco de la historia del México antiguo. TIEMPO APROXIMADO 2 HORAS."
- },
- {
   title: "NANACAMILPA MÁGICO",
   description: "Conoce Nanacamilpa, recorriendo las calles principales y los lugares emblemáticos, donde un guía te platicará sobre la historia de esta maravillosa ciudad. -TIEMPO APROXIMADO 1 HORA"
+ },
+ {
+  title: "HACIENDA SIGLO XVlll",
+  description: "Ubicada a 30 minutos del Santuario de la Luciérnaga, considerada como uno de los principales atractivos turísticos del estado de Hidalgo y dentro del Top 10 de las mejores haciendas del país, donde podrás transportarte en el tiempo y vivir un poco de la historia del México antiguo. TIEMPO APROXIMADO 2 HORAS."
  },
  {
   title: "CAMPAMENTO KIKIPUNGA",
@@ -296,7 +296,7 @@ function sendFacturasForm() {
     alert("Ocurrió un error con su solicitud, inténtelo más tarde.");
    }
 
-   console.log("ERROR:"+message);
+   console.log("ERROR:" + message);
   }
  );
 }
