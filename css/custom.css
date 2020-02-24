@@ -332,7 +332,48 @@
       opacity: 0.9;
     }
 
+    .santuario{
+      background-image: url("../img/modal/FACTURACION.jpg");
+      height: 600px;
+      position: relative;
+    }
+
+    .santuarioText{
+      font-size: 16px;
+      background-color: var(--darkGreen-bg-color);
+      position: absolute; 
+      bottom: 40px;
+      margin-left: 10%; 
+      margin-right: 10%;
+      padding: 30px;
+      border-radius: 10px;
+      opacity: 0.9;
+    }
+
+    .santurioTitle{
+      width: 100%;
+      position: absolute; 
+      top: 50px;
+      font-size: 70px;
+      font-family: 'Smoke';
+      color: var(--orange-bg-color);
+      background: rgb(8,7,11);
+      background: radial-gradient(circle, rgba(8,7,11,1) 0%, rgba(121,121,121,0) 74%);   
+    }
+
     @media only screen and (max-width: 750px) {
+      .santurioTitle{
+        top: 0px;
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+      .santuarioText{
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        bottom: 15px;
+      }
+
       .padtMob10{
         padding: 10px !important;
       }
