@@ -337,7 +337,8 @@
     }
 
     .santuario{
-      background-image: url("../img/modal/FACTURACION.jpg");
+      background-image: url("../img/santuario/fondo-ecoreiono.png");
+      background-size: cover;
       height: 600px;
       position: relative;
     }
@@ -383,7 +384,16 @@
       background: radial-gradient(circle, rgba(113,156,192,1) 0%, rgba(121,121,121,0) 70%); 
     }
 
+    .santuarioImg{
+      width: 40%; 
+      margin-top: 40px;
+    }
+
     @media only screen and (max-width: 750px) {
+      .santuarioImg{
+        width: 60% !important; 
+      }
+
       .footerLogosContainer{
         margin-top: 30px !important;
       }
