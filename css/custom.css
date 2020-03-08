@@ -35,6 +35,19 @@
       color: var(--page-font-color);
     }
 
+    .comoLlegar{
+      /*background-image: url('../img/iconos\ de\ atencion/manchon-viajero.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-size: 40px;
+      color: var(--darkGreen-bg-color);
+      text-align: left;
+      padding: 50px 0px 50px 100px;
+      margin: 50px 0px 50px 0px;*/
+      width: 100%; 
+      padding: 50px 200px 50px 200px;
+    }
+
     .rumbosTitle{
       font-family: 'Smoke'; 
       font-size: 100px;
@@ -82,6 +95,7 @@
     .hospedajeNTitle{
       font-family: 'Smoke'; 
       font-size: 100px;
+      line-height: 50px !important;
       height: 300px;
       background-size: cover;
       background-image: url('../img/hospedajeNanacamilpa/Hotel_Argos/HOTEL\ ARGOS\ 2.jpg');
@@ -104,10 +118,10 @@
     .atencionTitle{
       font-family: 'Smoke'; 
       font-size: 100px;
-      height: 300px;
+      /*height: 300px;
       background-size: cover;
       background-image: url('../img/atencionCliente/guia.jpg');
-      background-position: bottom;
+      background-position: bottom;*/
       padding-left: 50px;
       padding-right: 50px;
     }
@@ -372,8 +386,8 @@
       margin-right: 10px;
       margin-top: 10px;
       margin-bottom: 10px;
-      animation-duration: 30s;
-      animation-delay: 2s;
+      animation-duration: 50s;
+      animation-delay: 3s;
       animation-iteration-count: infinite;
     }
 
@@ -381,7 +395,7 @@
       margin-top: 280px;
       padding: 20px 0px 20px 0px;
       background: rgb(113,156,192);
-      background: radial-gradient(circle, rgba(113,156,192,1) 0%, rgba(121,121,121,0) 70%); 
+      background: radial-gradient(circle, rgba(113,156,192,1) 0%, rgba(121,121,121,0) 100%); 
     }
 
     .santuarioImg{
@@ -390,6 +404,26 @@
     }
 
     @media only screen and (max-width: 750px) {
+      .reservaButton{
+        padding: 2px 5px 2px 5px !important;
+        font-size: small !important;
+      }
+
+      .headerReserva{
+        text-align: right !important;
+      }
+
+      .comoLlegar{
+        /*background-size: contain !important;*/
+        width: 100%;
+        padding: 50px 0px 50px 0px;
+      }
+
+      .santuario{
+        height: auto !important;
+        padding-bottom: 40px !important;
+      }
+
       .santuarioImg{
         width: 70% !important; 
       }
@@ -547,7 +581,8 @@
 
       .atencionTitle{
         font-size: 50px !important;
-        height: 170px;
+        line-height: 50px !important;
+        /*height: 170px;*/
         padding-left: 30px;
         padding-right: 30px;
       }
